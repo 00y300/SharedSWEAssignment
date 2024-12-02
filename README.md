@@ -29,13 +29,13 @@
 
 #### 3. Output Requirements  
 
-- [ ] **SRD-012: Total Output Value Including Interest**  
-  - [ ] **Test Case 8.1**: Ensure the application outputs the correct total output value.**--Created**
-  - [ ] **Test Case 8.2**: Ensure the application’s output of total output value is contained within two (2) decimal places (hundredths).**--Created**
+- [X] **SRD-012: Total Output Value Including Interest**  
+  - [X] **Test Case 8.1**: Ensure the application outputs the correct total output value.**--Created**
+  - [X] **Test Case 8.2**: Ensure the application’s output of total output value is contained within two (2) decimal places (hundredths).**--Created**
 
-- [ ] **SRD-013: Rate of Return**  
-  - [ ] **Test Case 9.1**: Ensure the application outputs the correct rate of return.**--Created**
-  - [ ] **Test Case 9.2**: Ensure the application’s output rate of return is contained within two (2) decimal places (hundredths).**--Created**
+- [X] **SRD-013: Rate of Return**  
+  - [X] **Test Case 9.1**: Ensure the application outputs the correct rate of return.**--Created**
+  - [X] **Test Case 9.2**: Ensure the application’s output rate of return is contained within two (2) decimal places (hundredths).**--Created**
 
 #### 4. User Interface and Other Requirements  
 
