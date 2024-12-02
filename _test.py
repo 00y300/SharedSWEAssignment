@@ -9,9 +9,9 @@ class TestCompoundInterestCalculator(unittest.TestCase):
     def testCalculateCompoundInterest(self):
         # Recalculated expected values
         test_cases = [
-            {"P": 1000, "r": 0.05, "n": 12, "t": 10, "expected": 1647.01},  # No change
-            {"P": 1500, "r": 0.04, "n": 4, "t": 5, "expected": 1830.29},  # Updated value
-            {"P": 2000, "r": 0.03, "n": 1, "t": 15, "expected": 3115.93}  # Updated value
+            {"P": 1000, "r": 0.05, "n": 12, "t": 10, "expected": 1647.01},  
+            {"P": 1500, "r": 0.04, "n": 4, "t": 5, "expected": 1830.29},  
+            {"P": 2000, "r": 0.03, "n": 1, "t": 15, "expected": 3115.93} 
         ]
         for case in test_cases:
             with self.subTest(case=case):
