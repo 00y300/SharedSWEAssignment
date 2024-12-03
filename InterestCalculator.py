@@ -6,10 +6,12 @@ def display_instructions():
     print("A = P * (1 + r / n) ^ (n * t)")
     print("Where:")
     print("A = the amount of money accumulated after n years, including interest.")
-    print("P = the principal amount (the initial investment).")
-    print("r = the annual interest rate (in decimal form).")
+    print("P = the principal amount (the initial investment in dollar amount).")
+    print("r = the annual interest rate (in decimal form, .05 for 5%).")
     print("n = the number of times the interest is compounded per year.")
     print("t = the time the money is invested in years.")
+    print("Instructions: Input values for P, r, n, & t in the format as described in prompt.")
+    print("To exit or re-enter application, ctrl+c.")
     print()
 
 def get_input(prompt):
