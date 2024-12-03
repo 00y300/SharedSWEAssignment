@@ -6,16 +6,33 @@ def display_instructions():
     print("A = P * (1 + r / n) ^ (n * t)")
     print("Where:")
     print("A = the amount of money accumulated after n years, including interest.")
-    print("P = the principal amount (the initial investment).")
-    print("r = the annual interest rate (in decimal form).")
+    print("P = the principal amount (the initial investment in dollar amount).")
+    print("r = the annual interest rate (in decimal form, .05 for 5%).")
     print("n = the number of times the interest is compounded per year.")
     print("t = the time the money is invested in years.")
+    print("Instructions: Input values for P, r, n, & t in the format as described in prompt.")
+    print("To exit or re-enter application, ctrl+c.")
     print()
 
 def get_input(prompt):
     while True:
         try:
-            return float(input(prompt))
+            i = float(input(prompt))
+            if i < 0.01:
+                print("Please enter a valid number, equal to greater than .01.")
+            else:
+                return i
+        except ValueError:
+            print("Please enter a valid number.")
+
+def get_r_input(prompt):
+    while True:
+        try:
+            i = float(input(prompt))
+            if i < .01 or i > 1.0:
+                print("Please enter a valid rate, equal or greater than .01.")
+            else:
+                return i
         except ValueError:
             print("Please enter a valid number.")
 
@@ -31,7 +48,7 @@ def main():
     
     # Input
     P = get_input("Enter the principal amount (P): ")
-    r = get_input("Enter the annual interest rate (r) in decimal form (e.g., 0.05 for 5%): ")
+    r = get_r_input("Enter the annual interest rate (r) in decimal form (e.g., 0.05 for 5%): ")
     n = get_input("Enter the number of times the interest is compounded per year (n): ")
     t = get_input("Enter the time in years (t): ")
     
